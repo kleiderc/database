@@ -9,11 +9,11 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.project</groupId>
-	<artifactId>structure</artifactId>
+	<artifactId>database</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<packaging>war</packaging>
-	<name>structure</name>
-	<description>Best practices for basic project structure for Spring Boot</description>
+	<name>database</name>
+	<description>Best practices for basic project database for Spring Boot</description>
 	<url/>
 	<licenses>
 		<license/>
@@ -40,6 +40,24 @@
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-tomcat</artifactId>
 			<scope>provided</scope>
+		</dependency>
+		<!-- Lombok for @Slf4j -->
+		<dependency>
+			<groupId>org.projectlombok</groupId>
+			<artifactId>lombok</artifactId>
+			<scope>provided</scope>
+		</dependency>
+		<!-- Spring Data JPA -->
+        <dependency>
+	        <groupId>org.springframework.boot</groupId>
+	        <artifactId>spring-boot-starter-data-jpa</artifactId>
+    	</dependency>
+    	<!-- Spring Boot Postgresql -->
+    	<dependency>
+			<groupId>org.postgresql</groupId>
+			<artifactId>postgresql</artifactId>
+			<version>42.7.1</version> <!-- REQUIRED for PostgreSQL 17 -->
+			<!--scope>runtime</scope-->
 		</dependency>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
